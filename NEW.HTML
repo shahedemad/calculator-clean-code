@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<link rel="stylesheet" href="STYLE.CSS" />
+<script src="SCRIPT.JS" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>آلة حاسبة بسيطة</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="header">
+    <h1>آلة حاسبة بسيطة</h1>
+  </div>
+  <div class="container">
+    <div class="calculator">
+      <input type="text" id="display" placeholder="0" readonly aria-label="شاشة العرض" />
+
+      <div>
+        <button class="btn-operator" data-type="clear" aria-label="مسح الكل">AC</button>
+        <button class="btn-operator" data-type="delete" aria-label="حذف آخر رقم">DEL</button>
+        <button class="btn-operator" data-type="operator" data-value="%">%</button>
+        <button class="btn-operator" data-type="operator" data-value="/">/</button>
+      </div>
+      <div>
+        <button class="btn-digit" data-type="digit" data-value="7">7</button>
+        <button class="btn-digit" data-type="digit" data-value="8">8</button>
+        <button class="btn-digit" data-type="digit" data-value="9">9</button>
+        <button class="btn-operator" data-type="operator" data-value="*">*</button>
+      </div>
+      <div>
+        <button class="btn-digit" data-type="digit" data-value="4">4</button>
+        <button class="btn-digit" data-type="digit" data-value="5">5</button>
+        <button class="btn-digit" data-type="digit" data-value="6">6</button>
+        <button class="btn-operator" data-type="operator" data-value="-">-</button>
+      </div>
+      <div>
+        <button class="btn-digit" data-type="digit" data-value="1">1</button>
+        <button class="btn-digit" data-type="digit" data-value="2">2</button>
+        <button class="btn-digit" data-type="digit" data-value="3">3</button>
+        <button class="btn-operator" data-type="operator" data-value="+">+</button>
+      </div>
+      <div>
+        <button class="btn-digit" data-type="digit" data-value="00">00</button>
+        <button class="btn-digit" data-type="digit" data-value="0">0</button>
+        <button class="btn-digit" data-type="digit" data-value=".">.</button>
+        <button class="btn-equal" data-type="equal" data-value="=" aria-label="يساوي">=</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>تم التطوير ❤️</p>
+  </div>
+</body>
+</html>
