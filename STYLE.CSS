@@ -41,6 +41,11 @@ body {
   border-radius: 5px;
   background-color: #121212;
   color: var(--text-color);
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
 }
 
 button {
@@ -53,7 +58,7 @@ button {
   color: var(--text-color);
   font-size: 1.2rem;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
+  transition: all 0.3s ease;
 }
 
 button:hover {
@@ -61,25 +66,6 @@ button:hover {
   transform: scale(1.05);
 }
 
-button:focus {
-  outline: 2px solid var(--equal-color);
-}
-
-.btn-operator {
-  color: var(--operator-color);
-}
-
-.btn-equal {
-  background-color: var(--equal-color);
-  color: #000;
-}
-
-.btn-equal:hover {
-  background-color: #f57c00;
-}
-
-.footer {
-  margin-top: 20px;
-  font-size: 0.9rem;
-  color: #aaa;
-}
+.btn-operator { color: var(--operator-color); }
+.btn-equal { background-color: var(--equal-color); color: #000; }
+.btn-equal:hover { background-color: #f57c00; }
