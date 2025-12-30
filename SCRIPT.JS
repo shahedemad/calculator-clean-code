@@ -10,9 +10,9 @@
             try {
                 // استخدام Function بدلاً من eval للأمان
                 const result = new Function('"use strict"; return (' + expression + ')')();
-                return (result === Infinity || isNaN(result)) ? "Error" : result;
+                return (result === Infinity || isNaN(result)) ? "Infinity" : result;
             } catch {
-                return "Error";
+                return "Infinity";
             }
         }
     };
