@@ -31,7 +31,7 @@
                 display.value = display.value.slice(0, -1);
             } else {
                 // إذا كان العرض "0" أو "Error"، استبدله بالقيمة الجديدة
-                if (display.value === "Error") display.value = "";
+                if (display.value === "Infinity") display.value = "";
                 display.value += value;
             }
         });
